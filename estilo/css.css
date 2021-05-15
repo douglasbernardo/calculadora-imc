@@ -2,8 +2,6 @@ body{
     background:#eee;
     text-align: center;
 }
-
-
 h1{
     text-decoration: underline;
     text-align: center;
@@ -16,7 +14,6 @@ div img{
     justify-content: center;
     margin-top: 50px;
 }
-
 .inputs{
     border: none;
     background-color: violet;
@@ -62,6 +59,19 @@ footer{
 .copyright{
     padding-top:40px;
 }
+.icones{
+    height: 35px;
+    width: 35px;
+    padding: 30px;
+    margin-top: 80px;
+}
+footer p{
+    margin-bottom: 30px;
+    font-size: large;
+    top: 80%;
+    position: absolute;
+    margin: 3px;
+}
 
 @media (max-width:650px){
     .body{
@@ -70,5 +80,30 @@ footer{
     div img{
         height:200px;
         width:400px;
+        margin-top: 35%
+    }
+    .inputs{
+        font-size: 40px;
+        width: 50%;
+    }
+    .icones{
+        height: 35px;
+        width: 35px;
+        padding: 20px;
+        margin-top: 80px;
+    }
+    #igual{
+        margin-top: 130px;
+        position: absolute;
+        left:45%;
+        top:10%;
+        height:40px;
+    }
+    #resultado{
+        left: 100%;
+        margin-top: 10px;
+        position: absolute;
+        left: 25%;
+        top: 35%
     }
 }
