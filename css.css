@@ -1,0 +1,74 @@
+body{
+    background:#eee;
+    text-align: center;
+}
+
+
+h1{
+    text-decoration: underline;
+    text-align: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+div img{
+    height:400px;
+    width:800px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.inputs{
+    border: none;
+    background-color: violet;
+    color:#000;
+    font-size: 30px;
+    text-shadow: tomato;
+    justify-content: center;
+}
+.redesocial{
+    height: 60px;
+    width: 30px;
+    padding: 10px 0;
+
+}
+#altura{
+    margin-top: 10px;
+}
+
+#resultado{
+    left: 100%;
+    margin-top: 10px;
+    position: absolute;
+	left: 70%;
+	top: 10%
+
+}
+#igual{
+    margin-top: 10px;
+    position: absolute;
+	left:65%;
+    top:10%;
+    height:50px;
+}
+
+footer{
+    height: 50px; 
+    margin-top: 50px;
+    background-color: rgb(32, 211, 243);
+    height: 200px;
+    width: 100%;
+    position: absolute;
+}
+.copyright{
+    padding-top:40px;
+}
+
+@media (max-width:650px){
+    .body{
+        background-color: #000;
+    }
+    div img{
+        height:200px;
+        width:400px;
+    }
+}
