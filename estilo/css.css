@@ -19,8 +19,16 @@ div img{
     background-color: violet;
     color:#000;
     font-size: 30px;
+    display: flexbox;
+    width: 250px;
     text-shadow: tomato;
     justify-content: center;
+}
+.inputs::-webkit-input-placeholder{
+    text-transform: uppercase;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
 }
 .redesocial{
     height: 60px;
@@ -32,17 +40,17 @@ div img{
     margin-top: 10px;
 }
 #resultado{
-    left: 100%;
     margin-top: 10px;
     position: absolute;
-	left: 70%;
-	top: 10%
+	left: 67%;
+    width: 100px;
+	top: 11%
 
 }
 #igual{
     margin-top: 10px;
     position: absolute;
-	left:65%;
+	left:770px;
     top:10%;
     height:50px;
 }
@@ -79,10 +87,9 @@ div img{
 }
 
 footer{
-    height: 50px; 
     margin-top: 50px;
     background-color: rgb(32, 211, 243);
-    height: 50%;
+    height: 30%;
     width: 100%;
     position: absolute;
 }
@@ -121,20 +128,36 @@ footer p{
     body{
         background-color: black;
     }
+    .informacao{
+        height: 160px;
+    }
+    #formulaImc{
+        background-color: #A9A9A9;
+        position: absolute;
+        min-height:190px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        top: 180%;
+        left: 17%;
+    }
 }
 @media (max-width:650px){
     .body{
         background-color: #000;
+        width: 100%;
     }
     div img{
         height:200px;
-        width:400px;
+        width:100%;
         margin-top: 35%
     }
     .inputs{
         font-size: 40px;
         width: 50%;
     }
+    c
     .icones{
         height: 35px;
         width: 35px;
@@ -150,7 +173,7 @@ footer p{
     }
     #resultado{
         left: 100%;
-        margin-top: 10px;
+        margin-top: 20px;
         position: absolute;
         left: 25%;
         top: 35%
@@ -164,17 +187,7 @@ footer p{
         padding: 30px;
         top: 40%;
     }
-    #formulaImc{
-        background-color: #A9A9A9;
-        position: absolute;
-        min-height:190px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        align-content: center;
-        top: 180%;
-        left: 17%;
-    }
+    c
     #formulaImc p{
         width: 100%;
         height: 100%;
@@ -198,10 +211,10 @@ footer p{
         font-size: 15px;
     }
     footer{
-        font-size: large;
         top: 270%;
         width: 100%;
         position: absolute;
         margin: 3px;
+        height: 30%;
     }
 }
