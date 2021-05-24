@@ -7,7 +7,27 @@ h1{
     text-align: center;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
-
+.containerInformacoes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    align-content: center;
+    justify-content: center;
+}
+.containerInformacoes div{
+    border:1px solid black;
+    padding: 10px;
+    background: cornsilk;
+    flex-basis: 33%;
+}
+.informacoes p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+}
+.informacoes h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
 div img{
     height:400px;
     width:800px;
@@ -54,45 +74,6 @@ div img{
     top:10%;
     height:50px;
 }
-#informacaoImc{
-    position: absolute;
-    font-size: 25px;
-    font-style: inherit;
-    font-weight: 900;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top: 0px;
-    word-wrap: break-word;
-}
-
-#imc{
-    display: flex;
-    margin-left: 20%;
-    flex-direction: row-reverse;
-    margin-top: 50px;
-    flex-shrink: initial;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#formulaImc{
-    background-color: #A9A9A9;
-    position: absolute;
-    top: 103%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    left: 60%;
-}
-
-footer{
-    margin-top: 50px;
-    background-color: rgb(32, 211, 243);
-    height: 30%;
-    width: 100%;
-    position: absolute;
-}
 .copyright{
     padding-top:40px;
 }
@@ -102,20 +83,11 @@ footer{
     padding: 30px;
     margin-top: 80px;
 }
-
-.informacao{
-    height: 400px;
-    width: 350px;
-    align-items: center;
-    text-align: center;
-    background-color: #A9A9A9;
-    border: 1px solid black;
-}
-
-.informacao p{
-    font-size: 20px;
-    text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+footer{
+    margin-top: 40%;
+    background-color: aqua;
+    width: 100%;
+    position: absolute;
 }
 footer p{
     margin-bottom: 30px;
@@ -124,6 +96,7 @@ footer p{
     position: absolute;
     margin: 3px;
 }
+/*
 @media (max-height:140px){
     body{
         background-color: black;
@@ -131,22 +104,16 @@ footer p{
     .informacao{
         height: 160px;
     }
-    #formulaImc{
-        background-color: #A9A9A9;
-        position: absolute;
-        min-height:190px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        align-content: center;
-        top: 180%;
-        left: 17%;
-    }
 }
+*/
 @media (max-width:650px){
     .body{
         background-color: #000;
         width: 100%;
+    }
+    .containerInformacoes{
+        flex-direction: column;
+        justify-content: space-between;
     }
     div img{
         height:200px;
@@ -157,7 +124,6 @@ footer p{
         font-size: 40px;
         width: 50%;
     }
-    c
     .icones{
         height: 35px;
         width: 35px;
@@ -178,43 +144,7 @@ footer p{
         left: 25%;
         top: 35%
     }
-    .informacao{
-        height: 50%;
-        width: 50%;
-        margin: 10px;
-        min-width: 190px;
-        min-height: 190px;
-        padding: 30px;
-        top: 40%;
-    }
-    c
-    #formulaImc p{
-        width: 100%;
-        height: 100%;
-        font-size: 15px;
-    }
-    #imc{
-        height:fit-content;
-        margin-left: 20%;
-        flex-direction: row-reverse;
-        margin-top: 50px;
-        flex-shrink: initial;
-        flex-wrap: wrap;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    #imc p{
-        width: 100%;
-        height: 100%;
-        font-size: 15px;
-    }
     footer{
-        top: 270%;
-        width: 100%;
-        position: absolute;
-        margin: 3px;
-        height: 30%;
+        margin-top: 300%;
     }
 }
