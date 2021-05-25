@@ -1,4 +1,5 @@
 body{
+    justify-content: center;
     background:#eee;
     text-align: center;
 }
@@ -11,14 +12,13 @@ h1{
     display: flex;
     flex-direction: row;
     margin-top: 30px;
-    align-content: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 .containerInformacoes div{
     border:1px solid black;
     padding: 10px;
     background: cornsilk;
-    flex-basis: 33%;
+    flex-basis: 23%;
 }
 .informacoes p{
     font-family: 'Courier New', Courier, monospace;
@@ -50,32 +50,22 @@ div img{
     align-items: center;
     text-align: center;
 }
-.redesocial{
-    height: 60px;
-    width: 30px;
-    padding: 10px 0;
-
-}
 #altura{
     margin-top: 10px;
 }
 #resultado{
     margin-top: 10px;
     position: absolute;
-	left: 67%;
+	left: 63%;
     width: 100px;
 	top: 11%
-
 }
 #igual{
     margin-top: 10px;
     position: absolute;
-	left:770px;
+	left:930px;
     top:10%;
     height:50px;
-}
-.copyright{
-    padding-top:40px;
 }
 .icones{
     height: 35px;
@@ -83,40 +73,35 @@ div img{
     padding: 30px;
     margin-top: 80px;
 }
+
 footer{
-    margin-top: 40%;
-    background-color: aqua;
+    display:flex;
     width: 100%;
-    position: absolute;
+    height: 300px;
+    background-color: aqua;
+    margin:50px;
+    margin-top:18%;
 }
 footer p{
-    margin-bottom: 30px;
     font-size: large;
     top: 80%;
     position: absolute;
     margin: 3px;
 }
-/*
-@media (max-height:140px){
-    body{
-        background-color: black;
-    }
-    .informacao{
-        height: 160px;
-    }
-}
-*/
-@media (max-width:650px){
+@media (max-width:800px){
     .body{
         background-color: #000;
-        width: 100%;
+        justify-content: center;
+        text-align: center;
     }
     .containerInformacoes{
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
     }
     div img{
-        height:200px;
+        height:350px;
         width:100%;
         margin-top: 35%
     }
@@ -134,17 +119,22 @@ footer p{
         margin-top: 130px;
         position: absolute;
         left:45%;
-        top:10%;
+        top:13%;
         height:40px;
     }
     #resultado{
-        left: 100%;
         margin-top: 20px;
         position: absolute;
-        left: 25%;
-        top: 35%
+        left: 37%;
+        top: 36%
     }
+    
     footer{
-        margin-top: 300%;
+        display:flex;
+        width: 100%;
+        height: 300px;
+        background-color: aqua;
+        margin:50px;
+        margin-top:18%;
     }
 }
