@@ -39,34 +39,27 @@ div img{
     background-color: violet;
     color:#000;
     font-size: 30px;
+    margin-top: 10px;
     display: flexbox;
+    align-items:center;
     width: 250px;
     text-shadow: tomato;
     justify-content: center;
 }
 .inputs::-webkit-input-placeholder{
     text-transform: uppercase;
-    font-size: 25px;
     align-items: center;
     text-align: center;
 }
-#altura{
+#resultadoBotao{
     margin-top: 10px;
 }
 #resultado{
-    margin-top: 10px;
-    position: absolute;
-	left: 63%;
+    margin-top: 20px;
+	left: 63px;
     width: 100px;
-	top: 11%
 }
-#igual{
-    margin-top: 10px;
-    position: absolute;
-	left:930px;
-    top:10%;
-    height:50px;
-}
+
 .icones{
     height: 35px;
     width: 35px;
@@ -80,12 +73,20 @@ footer{
     background-color: aqua;
     margin-top:18%;
 }
+
+footer span{
+ 
+}
+
+
 footer p{
     font-size: large;
     top: 80%;
     position: absolute;
     margin: 3px;
 }
+
+
 @media (max-width:800px){
     .body{
         background-color: #000;
@@ -99,53 +100,25 @@ footer p{
         align-content: center;
         align-items: center;
     }
+    .containerInformacoes .informacoes{
+        margin-top:30px;
+    }
     div img{
         height:350px;
         width:100%;
-        margin-top: 35%
+        margin-top: 35px;
     }
     .inputs{
-        font-size: 40px;
+        font-size: 30px;
         width: 50%;
     }
     .icones{
         height: 35px;
         width: 35px;
-        padding: 20px;
-        margin-top: 80px;
-    }
-    #igual{
-        margin-top: 130px;
-        position: absolute;
-        left:45%;
-        top:13%;
-        height:40px;
     }
     #resultado{
-        margin-top: 20px;
-        position: absolute;
-        left: 107px;
-        top: 230px
-    }
-    
-    footer{
-        display:flex;
-        width: 100%;
-        height: 300px;
-        background-color: aqua;
-        margin-top:18%;
-    }
-    footer span{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    
-    footer span a{
-        display: flex;
-        align-items: center;
-        height: 60px;
-        justify-items: center;
-        justify-content: center;
+        margin-top: 10px;
+        left: 150px;
+        top: 235px
     }
 }

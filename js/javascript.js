@@ -1,6 +1,4 @@
 
-let icone= document.getElementById("igual")
-
 const mostraIMC = () => {
 
     let pesoUsuario = document.getElementById("peso").value
@@ -25,7 +23,9 @@ const mostraIMC = () => {
 
     if(alturaValida && pesoValido){
         let resultadoImc = calculaIMC(pesoUsuario,alturaUsuario);
-        resultadoImcUsuario.value = resultadoImc
+        setTimeout(() => {
+            resultadoImcUsuario.value = resultadoImc
+        }, 3000);
         
     }
     window.onload = ()=>{
@@ -57,4 +57,4 @@ function validaPeso(pesoUsuario){
     }
 }
 
-icone.addEventListener('click',mostraIMC)
+document.getElementById("resultadoBotao").addEventListener("click",mostraIMC)
