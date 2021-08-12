@@ -49,9 +49,12 @@ div img{
 }
 .inputs::-webkit-input-placeholder{
     text-transform: lowercase;
+    font-size:25px;
     align-items: center;
     text-align: center;
+    color:black;
 }
+
 #resultadoBotao{
     margin-top: 10px;
     border-radius:15px;
